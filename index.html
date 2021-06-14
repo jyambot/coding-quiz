@@ -4,14 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Tiiime!!</title>
+    <title>It's A Coding Quiz!</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
 
 </head>
 <body>
+    <button id="high-score" href="#">View High Scores</button>
     <div id="timer">Time Left: 100</div>
+
+    <div class="quiz-card" id="end">
+    </div>
+
+    <div class="quiz-card" id="highscores">
+    </div>
+
+    <div class="quiz-card" id="quiz5">
+        <h2 class="question">Quiz question 5</h2>
+        <ul class="list-group">
+            <button class="list-group-item" onclick="checkAnswer()">Answer 5.1</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 5.2</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 5.3</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 5.4</button>
+        </ul>
+        <hr>
+        <div class="result">poop</div>
+    </div>
+
+    <div class="quiz-card" id="quiz4">
+        <h2 class="question">Quiz question 4</h2>
+        <ul class="list-group">
+            <button class="list-group-item" onclick="checkAnswer()">Answer 4.1</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 4.2</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 4.3</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 4.4</button>
+        </ul>
+        <hr>
+        <div class="result">poop</div>
+    </div>
+
+    <div class="quiz-card" id="quiz3">
+        <h2 class="question">Quiz question 3</h2>
+        <ul class="list-group">
+            <button class="list-group-item" onclick="checkAnswer()">Answer 3.1</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 3.2</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 3.3</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 3.4</button>
+        </ul>
+        <hr>
+        <div class="result">poop</div>
+    </div>
+
+    <div class="quiz-card" id="quiz2">
+        <h2 class="question">Quiz question 2</h2>
+        <ul class="list-group">
+            <button class="list-group-item" onclick="checkAnswer()">Answer 2.1</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 2.2</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 2.3</button>
+            <button class="list-group-item" onclick="checkAnswer()">Answer 2.4</button>
+        </ul>
+        <hr>
+        <div class="result">poop</div>
+    </div>
+
+    <div class="quiz-card" id="quiz1">
+        <h2 class="question">Commonly used data types DO NOT include:</h2>
+        <ul class="list-group">
+            <button class="list-group-item" onclick="checkAnswer()">strings</button>
+            <button class="list-group-item" onclick="checkAnswer()">booleans</button>
+            <button class="list-group-item" onclick="checkAnswer()">alerts</button>
+            <button class="list-group-item" onclick="checkAnswer()">numbers</button>
+        </ul>
+        <hr>
+        <div class="result">poop</div>
+    </div>
+
+    <div class="quiz-card" id="title-card">
+        <h1 align="center">Coding Quiz Challenge!</h1>
+        <br>
+        <h3>
+            Try to answer the following code-related questions within the time limit. <br>
+            Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+        </h3>
+        <button id="start-button" onclick="quizStart()">Start Quiz</button>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>

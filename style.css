@@ -1,11 +1,74 @@
-#timer {
+body {
+    background-color: darkslategrey;
+}
+
+.quiz-card {
+    background-color: lightgrey;
+    height: 50%;
+    width: 75%;
+    padding: 3%;
+    border: 5% solid lightgrey;
+    border-radius: 10px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list-group-item {
+    text-align: left;
+    font-weight: 500;
+}
+
+.list-group-item:hover {
+    background-color: blue;
     color: white;
-    font-size: x-small;
+}
+
+.result {
+    visibility: hidden;
+}
+
+#high-score {
+    color: white;
+    font-size: small;
     font-weight: bold;
     position: fixed;
-    right: 5px;
-    top: 5px;
-    border: 3px solid blue;
-    border-radius: 10%;
-    background-color: blue;
+    left: 10px;
+    top: 10px;
+    border: 5px solid darkblue;
+    border-radius: 3px;
+    background-color: darkblue;
 }
+
+#timer {
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    border: 7px solid darkblue;
+    border-radius: 3px;
+    background-color: darkblue;
+}
+
+#start-button {
+    font-size: larger;
+    font-weight: 500;
+    border: 3px solid black;
+    border-radius: 5px;
+    position: relative;
+    left: 50%;
+    /* bottom: 15%; */
+    transform: translate(-50%);
+}
+
+#start-button:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* #quiz1, #quiz2, #quiz3, #quiz4, #quiz5 {
+    visibility: hidden;
+} */
